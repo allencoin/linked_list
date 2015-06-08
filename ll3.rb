@@ -1,5 +1,3 @@
-# No comments on this version
-
 class LinkedListNode
   attr_accessor :value, :next_node
 
@@ -16,10 +14,14 @@ class Stack
     @data = nil
   end
 
+  # We can't access Array.push so we have to write
+  # it ourselves. What exactly does Array.push do?
   def push(element)
-
+    
   end
 
+  # We can't access Array.pop so we have to write
+  # it ourselves. What exactly does Array.pop do?
   def pop
 
   end
@@ -35,6 +37,8 @@ def print_values(list_node)
   end
 end
 
+# We also can't reverse this like we would an array,
+# so how do we implement that here? 
 def reverse_list(list)
   while list
     list = list.next_node
@@ -49,6 +53,11 @@ node4 = LinkedListNode.new(4, node3)
 print_values(node4)
 
 puts "------"
+
+# We basically have to write 3 functions that previously
+# have been implicit in Ruby with Arrays, but we can't
+# use arrays here. Once those three functions work, the
+# below will work. 
 
 # revlist = reverse_list(node3)
 
