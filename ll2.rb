@@ -18,7 +18,9 @@ class Stack
 
   # Push an item onto the stack
   def push(element)
-    # IMPLEMENTME!
+    # This should function kind of like print_values
+    # except we're pushing the integer to the data storage
+    # ... if that makes sense
 
   end
 

@@ -27,13 +27,33 @@ class Stack
   end
 end
 
+# takes the initialized node [like LinkedListNode.new(37)
+# which is node1 = 37 --> nil, which is 
+# (value --> next_node=nil)]
 def print_values(list_node)
+    # prints the node (node1)'s first element, which is
+    # node1.value, which is 37
+    # followed by an arrow
     print "#{list_node.value} --> "
+    # THEN, if next_node = nil (which is default, which
+    # means we've reached the end of list_node or node1)
+    # ...
     if list_node.next_node.nil?
+      # ... prints nil, signifying the end of the line
       print "nil\n"
       return
     else
+      # BUT if next_node != nil, which means we still have
+      # some numbers to print, we loop through the function
+      # again, sending us back up to the beginning of the
+      # function. 
       print_values(list_node.next_node)
+      # So what this here is doing is taking the 
+      # print_values function and applying it to the
+      # next_node, which in this case could be node2
+      # if list_node = node3, and then we print the 
+      # value and check to see if we're at the end. 
+      # We keep looping until we reach nil/the end.
     end
 end
 

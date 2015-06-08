@@ -17,20 +17,22 @@ class Stack
   end
 
   def push(element)
+
   end
 
   def pop
+
   end
 end
 
 def print_values(list_node)
-    print 
-    if list_node.next_node.nil?
-      print "nil\n"
-      return
-    else
-      print_values(list_node.next_node)
-    end
+  print "#{list_node.value} --> "
+  if list_node.next_node.nil?
+    print "nil\n"
+    return
+  else
+    print_values(list_node.next_node)
+  end
 end
 
 def reverse_list(list)
@@ -44,7 +46,10 @@ node2 = LinkedListNode.new(99, node1)
 node3 = LinkedListNode.new(12, node2)
 node4 = LinkedListNode.new(4, node3)
 
+print_values(node4)
 
-revlist = reverse_list(node3)
+puts "------"
 
-print_values(revlist)
+# revlist = reverse_list(node3)
+
+# print_values(revlist)
