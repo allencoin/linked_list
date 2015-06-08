@@ -16,6 +16,16 @@ class Stack
 
   # We can't access Array.push so we have to write
   # it ourselves. What exactly does Array.push do?
+  # Well... it takes the current array and puts the 
+  # new elements at the end.
+  # So if @data is kinda working like our array, 
+  # we want to loop through @data and add the first
+  # part of the linkedlist, then the second, then loop
+  # again to make sure we're done and then add nil. 
+  # So this works kind of like print_values except we're
+  # storing things in memory. 
+  # This is making my head spin. 
+  # So this is going to be recursive like print_values. 
   def push(element)
     
   end
