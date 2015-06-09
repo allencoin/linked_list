@@ -30,13 +30,39 @@ class Stack
   # This is making my head spin. 
   # So this is going to be recursive like print_values. 
   def push(element)
+    # So if we're using LinkedListNode like an array, 
+    # how would we do this if it were an array using
+    # the same basic method? 
+    # It should be something like:
+
+    # def Arrayer
+    #  if array.nil?
+    #   array << element.value
+    #  else 
+    #   array << Arrayer(element.next_node)
+    #  end
+
+    # Maybe something along those lines. 
+    # So if we're using LinkedListNode in place of
+    # an array as a way to put the linked list in
+    # memory, we need to do basically the same thing
     
+    # def push(element)
+    # if @data.nil?
+    #   @data = LinkedListNode.new(element.value)
+    # elses
+    #   @data = push(element.next_node)
+    # end
+
   end
 
   # We can't access Array.pop so we have to write
   # it ourselves. What exactly does Array.pop do?
   def pop
-
+    # What does array.pop do? It takes the last 
+    # item of a list. We want this method to return
+    # the last item. So maybe we can do something like:
+    # return @data.last
   end
 end
 
@@ -53,7 +79,10 @@ end
 # We also can't reverse this like we would an array,
 # so how do we implement that here? 
 def reverse_list(list)
+  # list = Stack.new
+
   while list
+    # While list what? 
     list = list.next_node
   end
 end
