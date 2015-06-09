@@ -40,6 +40,7 @@ class Stack
     #   array << element.value
     #  else 
     #   array << Arrayer(element.next_node)
+          # Or something like that...
     #  end
 
     # Maybe something along those lines. 
@@ -50,8 +51,8 @@ class Stack
     # def push(element)
     # if @data.nil?
     #   @data = LinkedListNode.new(element.value)
-    # elses
-    #   @data = push(element.next_node)
+    # else
+    #   @data = LinkedListNode.new(element.next_node)
     # end
 
   end
