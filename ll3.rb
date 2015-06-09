@@ -7,6 +7,9 @@ class LinkedListNode
   end
 end
 
+
+
+
 class Stack
   attr_reader :data
 
