@@ -51,6 +51,8 @@ class Stack
     # def push(element)
     # if @data.nil?
     #   @data = LinkedListNode.new(element.value)
+          # I think we have to do it like this because
+          # We're taking the input below as an argument
     # else
     #   @data = LinkedListNode.new(element.next_node)
     # end
